@@ -14,3 +14,8 @@
   </mat-form-field>
   <button mat-raised-button type="submit">Send</button>
 </form>
+
+
+@if(showHelpPanel()) {
+  <app-help-panel (close)="closeHelpPanel()"></app-help-panel>
+}
